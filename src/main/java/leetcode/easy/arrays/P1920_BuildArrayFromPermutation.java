@@ -1,4 +1,4 @@
-package leetcode.easy.string;
+package leetcode.easy.arrays;
 
 public class P1920_BuildArrayFromPermutation {
 

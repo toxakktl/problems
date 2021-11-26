@@ -1,4 +1,4 @@
-package leetcode.easy.string;
+package leetcode.easy.strings;
 
 public class P1108_DefangingAnIPAddress {
 
