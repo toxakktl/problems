@@ -3,7 +3,6 @@ package leetcode.easy.arrays;
 public class P860_LemonadeChange {
 
     /**
-     * dumb solution
      * @param bills
      * @return
      */
