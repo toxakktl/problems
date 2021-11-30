@@ -1,4 +1,4 @@
-package leetcode.easy.math;
+package leetcode.math.easy;
 
 public class P836_RectangleOverlap {
     /**

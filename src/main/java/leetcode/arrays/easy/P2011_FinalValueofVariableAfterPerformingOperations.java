@@ -1,4 +1,4 @@
-package leetcode.easy.arrays;
+package leetcode.arrays.easy;
 
 public class P2011_FinalValueofVariableAfterPerformingOperations {
 

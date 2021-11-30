@@ -1,4 +1,4 @@
-package leetcode.easy.arrays;
+package leetcode.arrays.easy;
 
 public class P1480_RunningSumOf1DArray {
     public int[] runningSum(int[] nums) {

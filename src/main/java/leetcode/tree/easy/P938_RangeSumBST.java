@@ -1,4 +1,4 @@
-package leetcode.easy.tree;
+package leetcode.tree.easy;
 
 import common.TreeNode;
 
