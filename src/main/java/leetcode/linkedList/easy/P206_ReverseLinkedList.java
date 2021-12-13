@@ -17,15 +17,14 @@ public class P206_ReverseLinkedList {
     }
 
     public static ListNode reverseList2(ListNode head) {
-        ListNode node = null;
-        ListNode temp = head;
-        while (temp != null) {
-            ListNode n = temp.next;
-            n.next = node;
-            node = n;
-            temp = n;
+        ListNode prev = null;
+        while (head != null) {
+            ListNode nextNode = head.next;
+            nextNode.next = prev;
+            prev = head;
+            head = nextNode;
         }
-        return temp;
+        return prev;
     }
 
 
