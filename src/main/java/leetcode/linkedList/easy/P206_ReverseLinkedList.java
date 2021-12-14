@@ -28,10 +28,6 @@ public class P206_ReverseLinkedList {
     }
 
 
-    //1,  temp  2,
-
-
-
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
         ListNode node2 = new ListNode(2);
