@@ -11,9 +11,8 @@ public class P215_KthLargestElement {
         PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b-a);
         for (int i: nums) {
             pq.add(i);
-        }
-        while (--k > 0) {
-            pq.poll();
+            if (pq.size() > k)
+                pq.poll();
         }
         return pq.peek();
     }
