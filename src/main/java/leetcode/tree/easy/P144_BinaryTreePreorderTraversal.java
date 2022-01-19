@@ -4,6 +4,7 @@ import common.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class P144_BinaryTreePreorderTraversal {
     public List<Integer> preorderTraversal(TreeNode root) {
@@ -22,5 +23,19 @@ public class P144_BinaryTreePreorderTraversal {
         preorderTraversal(root.left);
         preorderTraversal(root.right);
         return res2;
+    }
+
+    public List<Integer> preorderTraversal3(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            if (node == null) continue;
+            res.add(node.val);
+            stack.push(node.right);
+            stack.push(node.left);
+        }
+        return res;
     }
 }
