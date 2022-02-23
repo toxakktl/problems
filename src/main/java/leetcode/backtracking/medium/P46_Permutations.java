@@ -15,7 +15,7 @@ public class P46_Permutations {
 
     private static void backtrack(List<List<Integer>> res, List<Integer> tempList, int [] nums) {
         if (tempList.size() == nums.length) {
-            res.add(tempList);
+            res.add(new ArrayList<>(tempList));
         } else {
             for (int i = 0; i < nums.length; i++) {
                 if (tempList.contains(nums[i])) continue;
