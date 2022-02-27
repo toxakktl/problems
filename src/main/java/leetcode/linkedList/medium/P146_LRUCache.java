@@ -12,6 +12,8 @@ public class P146_LRUCache {
     public P146_LRUCache(int capacity) {
         this.capacity = capacity;
         cache = new HashMap<>(capacity);
+        head.next = tail;
+        tail.prev = head;
     }
 
     public int get(int key) {
