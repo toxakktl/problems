@@ -20,7 +20,7 @@ public class P206_ReverseLinkedList {
         ListNode prev = null;
         while (head != null) {
             ListNode nextNode = head.next;
-            nextNode.next = prev;
+            head.next = prev;
             prev = head;
             head = nextNode;
         }
@@ -36,7 +36,7 @@ public class P206_ReverseLinkedList {
         head.next = node2;
         node2.next = node3;
         node3.next = node4;
-        reverseList(head);
+        reverseList2(head);
 
     }
 }
