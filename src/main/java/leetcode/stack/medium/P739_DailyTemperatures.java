@@ -26,16 +26,14 @@ public class P739_DailyTemperatures {
         Deque<Integer> stack = new ArrayDeque<>();
 
         for (int i = 0; i < N; i++) {
-            int currentTemp = temperatures[i];
-            // Pop until the current day's temperature is not
-            // warmer than the temperature at the top of the stack
-            while (!stack.isEmpty() && temperatures[stack.peek()] < currentTemp) {
+            int currTemp = temperatures[i];
+
+            while (!stack.isEmpty() && temperatures[stack.peek()] < currTemp) {
                 int prevDay = stack.pop();
                 res[prevDay] = i - prevDay;
             }
             stack.push(i);
         }
-
         return res;
     }
 
